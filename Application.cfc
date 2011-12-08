@@ -9,16 +9,23 @@ component{
 	this.sessionmanagement = true;
     this.sessiontimeout= CreateTimeSpan(0,1,0,0);
 	
-	application.scopeKey = "You found me!";
+	
 
 	public boolean function onApplicationStart(){
+		application.scopeKey = "You found me!";
 		application.currentDirectory = getCurrentDirectory();
+		return true;
+	}
+	
+	public boolean function onSessionStart(){
+		session.scopeKey = "Pretty handy for security";
 		return true;
 	}
 
 	public boolean function onRequestStart(){
 		if(isDefined("url.reset")){
 			onApplicationStart();
+			onSessionStart();
 		}
 		request.scopeKey = "This is set on every request";
 

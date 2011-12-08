@@ -5,7 +5,7 @@
 	function init( plant ){
 		this.setPlant(plant);
 		this.setName("Fruit");
-		this.setNutrition(200);
+		this.setCalories(200);
 		this.setServingsPerDay(3);
 		
 	}

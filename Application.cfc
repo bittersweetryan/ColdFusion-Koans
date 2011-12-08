@@ -24,6 +24,7 @@ component{
 
 		return true;
 	}
+
 	private String function getCurrentDirectory()
 	output=false hint="I get the current directory name that this app is running in"{
 		dirs = getDirectoryFromPath(getCurrentTemplatePath());

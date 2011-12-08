@@ -1,6 +1,6 @@
 <cfparam name="url.print_js_resources" type="boolean" default="true" />
 <cfparam name="url.toggledebug" type="boolean" default="true" />
-<cfabort >
+
 <cfinclude template="resources/theme/header.cfm" />
 <cftry>
 	<!--- TODO This will probably break once past CF 9 --->

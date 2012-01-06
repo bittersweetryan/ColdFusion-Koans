@@ -40,4 +40,25 @@ component extends="mxunit.framework.TestCase"{
 
 		assertEquals(myArray[3],"__");
 	}
+
+	public void function testClearingArray() {
+		
+		// Use the function arrayClear() to delete the data in an array
+		// Usage: arrayClear(array)
+		// Reference: http://help.adobe.com/en_US/ColdFusion/9.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7f1f.html
+
+		// Set our array
+		
+		var myArray = ["a","b","c"];
+
+		// Clear the array
+		
+		arrayClear(myArray);
+
+		// Use arrayFind() to see if the letter "a" still exists in our array
+		// Note: arrayFind() returns the index in the array of the first match, or 0, if there is no match.
+
+		assertEquals(arrayFind(myArray, "a") EQ 1,"__");
+
+	}
 }

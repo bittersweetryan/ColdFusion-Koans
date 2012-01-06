@@ -52,11 +52,11 @@ component extends="mxunit.framework.TestCase"{
 
 		var randomNum = randRange(1, 10);
 
-		assertEquals(randomNum LT 11, "__");
+		assertEquals(randomNum > 10, "__");
 
 	}
 
-	// Private functions 
+	// Private functions
 	// These are used by the tests above and should not be altered
 
 	private numeric function addOne(numeric myNum){

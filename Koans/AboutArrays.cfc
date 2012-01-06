@@ -72,7 +72,7 @@ component extends="mxunit.framework.TestCase"{
 		// Use arrayFind() to see if the letter "a" still exists in our array
 		// Note: arrayFind() returns the index in the array of the first match, or 0, if there is no match.
 
-		assertEquals(arrayFind(myArray, "a") EQ 1,"__");
+		assertEquals(arrayFind(myArray, "a"),"__");
 
 	}
 }

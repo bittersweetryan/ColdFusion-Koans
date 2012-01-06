@@ -44,6 +44,21 @@ component extends="mxunit.framework.TestCase"{
 		//if you are not sure what happened read this blog post by Ben Nadal http://bit.ly/tsDWYe
 	}
 
+	public void function testGettingRandomNumber() {
+		
+		// Use randRange() to return a random number in the range between two specified numbers
+		// Usage: randRange(number1, number2);
+		// Reference: http://help.adobe.com/en_US/ColdFusion/9.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7af3.html
+
+		var randomNum = randRange(1, 10);
+
+		assertEquals(randomNum LT 11, "__");
+
+	}
+
+	// Private functions 
+	// These are used by the tests above and should not be altered
+
 	private numeric function addOne(numeric myNum){
 		return myNum + 1;
 	}

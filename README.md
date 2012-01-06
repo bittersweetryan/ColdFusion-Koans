@@ -31,6 +31,8 @@ Michael Seid [@mbseid](http://twitter.com/#!/mbseid)
 
 Steven Neiland [@sneiland](http://twitter.com/#!/sneiland)
 
+Grant Copley [@fusehill](https://twitter.com/#!/fusehill)
+
 ##Thanks
 
 Robert Glover [@snarfblat](http://twitter.com/#!/snarfblat) for helping me troubleshoot issues.

@@ -2,9 +2,10 @@ component extends="mxunit.framework.TestCase"{
 
 	public void function testGettingStringLength(){
 		
-		// Use the len() function to return the length of a string or binary object
+		// Use len() to return the length of a string or binary object
 		// For now, we'll work with a simple string
 		// Usage: len(string)
+		// Reference: http://help.adobe.com/en_US/ColdFusion/9.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7f38.html
 		
 		var myVar = "apple";
 

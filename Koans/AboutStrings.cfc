@@ -91,8 +91,9 @@ component extends="mxunit.framework.TestCase"{
 
 	public void function testRemovingTrailingSpaces() {
 
-		// Use the rTrim() function to removes spaces from the end of a string
+		// Use rTrim() to remove spaces from the end of a string
 		// Usage: rTrim(string)
+		// Reference: http://help.adobe.com/en_US/ColdFusion/9.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-6e47.html
 
 		var myVar = "  hello world!  ";		
 

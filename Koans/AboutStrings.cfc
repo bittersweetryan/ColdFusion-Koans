@@ -186,5 +186,19 @@ component extends="mxunit.framework.TestCase"{
 
 	}
 
+	public void function testEscapingHtml() {
+		
+		// Use htmlEditFormat() to replaces special characters in a string with their HTML-escaped equivalents.
+		// Usage: htmlEditFormat(string)
+		// Reference: http://help.adobe.com/en_US/ColdFusion/9.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7847.html
+
+		// Example: htmlEditFormat("<html>") would return: &lt;html&gt;
+
+		var html = "<p>This is a paragraph!</p>";
+
+		assertEquals(htmlEditFormat(html), "__");
+
+	}
+
 
 }

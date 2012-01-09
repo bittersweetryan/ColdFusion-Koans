@@ -15,8 +15,9 @@ component extends="mxunit.framework.TestCase"{
 
 	public void function testRepeatingString(){
 		
-		// Use the repeatString() function to repeat a string
+		// Use repeatString() to repeat a string
 		// Usage: repeatString(string, count)
+		// Reference: http://help.adobe.com/en_US/ColdFusion/9.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-6e41.html
 
 		var myVar = "Ho! "; // Notice the trailing space
 

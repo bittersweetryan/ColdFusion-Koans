@@ -6,7 +6,7 @@ component extends="mxunit.framework.TestCase"{
 		// Usage: isDefined("variable")
 		// Ref: http://help.adobe.com/en_US/ColdFusion/9.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7fbd.html
 
-		assertEquals(isDefined("foo") ,"__"); 
+		assertEquals(isDefined("someVariableWithALongName") ,"__"); 
 	}
 
 

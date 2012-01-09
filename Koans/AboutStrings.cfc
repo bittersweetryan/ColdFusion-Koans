@@ -103,8 +103,9 @@ component extends="mxunit.framework.TestCase"{
 
 	public void function testRemovingChars(){
 		
-		// Use the removeChars() function to remove characters from a string
+		// Use removeChars() to remove characters from a string
 		// Usage: removeChars(string, start, count)
+		// Reference: http://help.adobe.com/en_US/ColdFusion/9.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-6e3e.html
 
 		var greatMoviePlot = "Marty and the Doc go back to the future";
 

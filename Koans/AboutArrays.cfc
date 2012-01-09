@@ -25,6 +25,20 @@ component extends="mxunit.framework.TestCase"{
 		assertEquals(myArray[4],"__");
 	}
 
+	public void function testFindingElementInArray() {
+		
+		// Use the function arrayFind() to perform a case-sensitive search on an array for a specified object.
+		// In this case, our object will be a simple string
+		// Usage: arrayFind(array, object)
+
+		var coldfusionEngines = ["adobe coldfusion","railo","open bluedragon"];
+
+		// Hint: arrayFind() returns the index in the array of the first match, or 0, if there is no match.
+
+		assertEquals(arrayFind(coldfusionEngines, "Railo"), "__");
+
+	}
+
 	public void function testArrayTextSorting(){
 		var myArray = ["pineapple","banana","grape","kiwi"];
 
@@ -39,5 +53,26 @@ component extends="mxunit.framework.TestCase"{
 		arraySort(myArray,"numeric");
 
 		assertEquals(myArray[3],"__");
+	}
+
+	public void function testClearingArray() {
+		
+		// Use the function arrayClear() to delete the data in an array
+		// Usage: arrayClear(array)
+		// Reference: http://help.adobe.com/en_US/ColdFusion/9.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-7f1f.html
+
+		// Set our array
+		
+		var myArray = ["a","b","c"];
+
+		// Clear the array
+		
+		arrayClear(myArray);
+
+		// Use arrayFind() to see if the letter "a" still exists in our array
+		// Note: arrayFind() returns the index in the array of the first match, or 0, if there is no match.
+
+		assertEquals(arrayFind(myArray, "a"),"__");
+
 	}
 }

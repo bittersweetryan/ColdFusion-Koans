@@ -81,8 +81,9 @@ component extends="mxunit.framework.TestCase"{
 	
 	public void function testRemovingLeadingSpaces() {
 
-		// Use the lTrim() function to removes spaces from the beginning of a string
+		// Use lTrim() to removes spaces from the beginning of a string
 		// Usage: lTrim(string)
+		// Reference: http://help.adobe.com/en_US/ColdFusion/9.0/CFMLRef/WSc3ff6d0ea77859461172e0811cbec22c24-6e4b.html
 
 		var myVar = "  hello world!  ";		
 

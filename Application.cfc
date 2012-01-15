@@ -5,19 +5,29 @@ component{
 	//railo needs mappings to component dirs for calling the components from within mxunit
 	this.mappings["/Koans"] = expandPath('.') & "/Koans/";
 	this.mappings["/Components"] = expandPath('.') & "/Components/";
-
+	
 	this.sessionmanagement = true;
     this.sessiontimeout= CreateTimeSpan(0,1,0,0);
+	
+	
 
 	public boolean function onApplicationStart(){
+		application.scopeKey = "You found me!";
 		application.currentDirectory = getCurrentDirectory();
+		return true;
+	}
+	
+	public boolean function onSessionStart(){
+		session.scopeKey = "Pretty handy for security";
 		return true;
 	}
 
 	public boolean function onRequestStart(){
 		if(isDefined("url.reset")){
 			onApplicationStart();
+			onSessionStart();
 		}
+		request.scopeKey = "This is set on every request";
 
 		return true;
 	}

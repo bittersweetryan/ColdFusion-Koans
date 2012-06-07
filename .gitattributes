@@ -12,11 +12,19 @@
 # Standard to msysgit
 *.doc	 diff=astextplain
 *.DOC	 diff=astextplain
-*.docx diff=astextplain
-*.DOCX diff=astextplain
-*.dot  diff=astextplain
-*.DOT  diff=astextplain
-*.pdf  diff=astextplain
+*.docx  diff=astextplain
+*.DOCX  diff=astextplain
+*.dot   diff=astextplain
+*.DOT   diff=astextplain
+*.pdf   diff=astextplain
 *.PDF	 diff=astextplain
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
+
+# ColdFusion
+*.cfm   text eol=crlf
+*.cfc   text eol=crlf
+*.cfml  text eol=crlf
+
+*.xml   text eol=crlf
+*.html  text eol=crlf

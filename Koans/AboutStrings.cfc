@@ -508,4 +508,6 @@ component extends="Koans.BaseKoan"{
 		var testDayAsNumber = 2;
 
 		// Hint: Everyones favourite day...but what's up with the number?
-		assertEquals(__,  DayOfWeekAsString( testDayAsNumber ));}}
+		assertEquals(__,  DayOfWeekAsString( testDayAsNumber ));
+	}
+}

@@ -4,6 +4,7 @@ The ColdFusion Koans are a set of unit tests that the user must make pass by fil
 open the file AboutAsserts/AboutAsserts.cfc and begin making the tests pass.
 
 **Its important that you use the mxunit that is packaged with this project.   It will run the unit tests in order!**
+**Its also important to ensure your function names are written in headless camel case e.g. listValueCount() !!**
 
 As you complete a section you'll confirm your tests by refreshing this page or running the test suite using the mxunit eclipse plugin.
 

@@ -744,7 +744,16 @@ component extends="Koans.BaseKoan"{
 		assertEquals(myList,listRestResult);
 	}
 
-
+	/**
+	* @order38
+	*/
+	public void function testListDeleteAt(){
+		var myList = "apple,banana,pear,pineapple";
+		var actual = listDeleteAt(myList,2); 
+		
+		assertEquals(__,actual);
+	}
+	
 	/*
 		BEING IMPLEMENTED
 	*/	

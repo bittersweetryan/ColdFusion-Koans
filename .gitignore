@@ -1,5 +1,6 @@
-
+/.gitignore
 /settings.xml
 /.project
 /.settings/org.eclipse.core.resources.prefs
 /WEB-INF
+/.DS_Store

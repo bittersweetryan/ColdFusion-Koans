@@ -1067,9 +1067,7 @@ component extends="Koans.BaseKoan"{
 		// listRemoveDuplicates is new in ColdFusion 10
 		// see: http://help.adobe.com/en_US/ColdFusion/10.0/CFMLRef/WSd8001ae4abdbd911-7fc6f4b01350d8e2282-8000.html
 		var myList            = "The cat in the hat sat on the mat";
-		
-		var result = null;
-		
+		var result = "";
 		if (server.coldfusion.productname is "Railo") {
 		result = 'ListRemoveDuplicates(myList, " ")';				// Railo
 		}

@@ -112,7 +112,6 @@ component extends="Koans.BaseKoan"{
 		// Returns : The absolute value of a number.
 		// Note    : For more details see: http://tinyurl.com/cuy5rgj
 		// Usage   : Abs(number)
-
 		var testNumber = "";
 		if (server.coldfusion.productname is "Railo") {
 		testNumber = evaluate('-1234^-10');			// Works in Railo and Coldfusion
